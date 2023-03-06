@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Codeply" />
+    <title>Codeply simple HTML/CSS/JS preview</title>
+    <base target="_self" />
+
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+    />
+
+    <style>
+      body {
+        overflow-x: hidden;
+        padding-top: 55px;
+        background-color: #f6f6f6;
+        background-color: #232930;
+      }
+
+      .bg-black {
+        background-color: #1d1d1d;
+      }
+
+      .sticky-top-side {
+        top: 70px;
+      }
+
+      .sidebar .mdi,
+      .navbar .mdi {
+        font-size: 26px;
+      }
+
+      .sidenav .nav-link {
+        width: 100%;
+      }
+
+      .sidenav .nav-link.active {
+        background-color: #232930;
+      }
+
+      .bg-light {
+        background-color: rgba(200, 200, 200, 0.1) !important;
+      }
+    </style>
+  </head>
+  <body
+    data-spy="scroll"
+    data-target=".sidenav"
+    class="d-flex flex-column"
+    id="navTop"
+  >
+    <nav class="navbar navbar-dark bg-black navbar-expand fixed-top">
+      <div class="container-fluid">
+        <a
+          data-bs-toggle="collapse"
+          href="#"
+          data-bs-target="#fullmenu"
+          role="button"
+          class="d-inline me-3 collapsed"
+          aria-expanded="false"
+        >
+          <i id="collapse-navbar" class="mdi mdi-view-sequential"></i>
+        </a>
+        <a class="navbar-brand text-primary" href="./">Dashboard</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#modalLogin" data-bs-toggle="modal" class="nav-link">
+              <i class="mdi mdi-24px mdi-account-outline text-light"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid px-0 flex-grow-1">
+      <div class="row g-0 flex-nowrap navbar-expand-lg">
+        <div class="col-auto pe-lg-2 text-white sidebar bg-black min-vh-100">
+          ;
+
+          <div class="row g-0 flex-nowrap sticky-top sticky-top-side">
+            <div id="lg-navbar" class="col-lg-9 col-auto">
+              <div
+                id="mobile-manber"
+                class="navbar-collapse flex-column align-items-start h-auto sidenav collapse"
+                style=""
+              >
+                <a class="nav-link py-3" href="#navTop">Home</a>
+                <a class="nav-link py-3" href="#sectionReports">Reports</a>
+                <a class="nav-link py-3" href="#sectionInbox">Inbox</a>
+                <a class="nav-link py-3" href="#sectionPremiums">Premiums</a>
+                <a class="nav-link py-3" href="#sectionAlerts">Alerts</a>
+                <a class="nav-link py-3" href="#sectionDetections"
+                  >Detections</a
+                >
+                <a
+                  class="nav-link py-3"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  >Integrations</a
+                >
+                <a
+                  class="nav-link py-3"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  >Customers</a
+                >
+                <a
+                  class="nav-link py-3"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  >Orders</a
+                >
+                <a
+                  class="nav-link py-3"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  >Settings</a
+                >
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="sidenav">
+                <a class="nav-link py-2" href="#navTop"
+                  ><i class="ms-auto mdi mdi-home-outline"></i
+                ></a>
+                <a class="nav-link py-2" href="#sectionReports"
+                  ><i class="ms-auto mdi mdi-file-document-box-outline"></i
+                ></a>
+                <a class="nav-link py-2" href="#sectionInbox"
+                  ><i class="ms-auto mdi mdi-mailbox"></i
+                ></a>
+                <a class="nav-link py-2" href="#sectionPremiums"
+                  ><i class="ms-auto mdi mdi-crown-outline"></i
+                ></a>
+                <a class="nav-link py-2" href="#sectionAlerts"
+                  ><i class="ms-auto mdi mdi-alarm-light-outline"></i
+                ></a>
+                <a class="nav-link py-2" href="#sectionDetections"
+                  ><i class="ms-auto mdi mdi-shield-account"></i
+                ></a>
+                <a
+                  class="nav-link py-2"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  ><i class="ms-auto mdi mdi-palette-swatch"></i
+                ></a>
+                <a
+                  class="nav-link py-2"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  ><i class="ms-auto mdi mdi-account-search-outline"></i
+                ></a>
+                <a
+                  class="nav-link py-2"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  ><i class="ms-auto mdi mdi-bus-clock"></i
+                ></a>
+                <a
+                  class="nav-link py-2"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  ><i class="ms-auto mdi mdi-settings-outline"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="modalLogin"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="mb-0">Login</h3>
+            <button
+              type="button"
+              class="btn-close font-weight-light"
+              data-bs-dismiss="modal"
+              aria-hidden="true"
+            ></button>
+          </div>
+          <div class="modal-body py-4">
+            <form
+              class="form mx-auto w-75"
+              role="form"
+              autocomplete="off"
+              id="formLogin"
+              novalidate=""
+              method="POST"
+            >
+              <div class="form-group">
+                <a href="" class="float-end">New user?</a>
+                <label for="uname1">Username</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  name="uname1"
+                  id="uname1"
+                  required=""
+                />
+                <div class="invalid-feedback">Oops, you missed this one.</div>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  id="pwd1"
+                  required=""
+                  autocomplete="new-password"
+                />
+                <div class="invalid-feedback">Enter your password too!</div>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="rememberMe"
+                />
+                <label class="custom-control-label" for="rememberMe"
+                  >Remember me on this computer</label
+                >
+              </div>
+              <div class="form-group py-4">
+                <button
+                  class="btn btn-outline-secondary btn-lg"
+                  data-bs-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-success btn-lg float-end"
+                  id="btnLogin"
+                >
+                  Login
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
