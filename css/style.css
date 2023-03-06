@@ -1,0 +1,44 @@
+body {
+  overflow-x: hidden;
+  padding-top: 55px;
+  background-color: #f6f6f6;
+  background-color: #232930;
+}
+.navbar-brand {
+  width: 110px;
+}
+.bg-black {
+  background-color: #1d1d1d;
+}
+
+.sticky-top-side {
+  top: 70px;
+}
+
+.sidebar .mdi,
+.navbar .mdi {
+  font-size: 26px;
+}
+
+.sidenav .nav-link {
+  width: 100%;
+}
+
+.sidenav .nav-link.active {
+  background-color: #232930;
+}
+
+.bg-light {
+  background-color: rgba(200, 200, 200, 0.1) !important;
+}
+
+/* dashboard */
+.round-card-container {
+  background-color: #6a73da;
+}
+.round-card {
+  background-color: #2c3169;
+}
+.all-card {
+  border-radius: 10px;
+}

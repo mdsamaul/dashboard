@@ -4,14 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="Codeply" />
-    <title>Dashboard</title>
-    <base target="_self" />
+    <link
+      rel="shortcut icon"
+      href="media/logos/favicon-infyom.png"
+      type="image/x-icon"
+    />
+    <title>Dashboard | t-card</title>
 
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-
+    <!-- fontawesome link  -->
+    <script
+      src="https://kit.fontawesome.com/2466c77d9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap link  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -22,39 +31,7 @@
       href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
     />
 
-    <style>
-      body {
-        overflow-x: hidden;
-        padding-top: 55px;
-        background-color: #f6f6f6;
-        background-color: #232930;
-      }
-
-      .bg-black {
-        background-color: #1d1d1d;
-      }
-
-      .sticky-top-side {
-        top: 70px;
-      }
-
-      .sidebar .mdi,
-      .navbar .mdi {
-        font-size: 26px;
-      }
-
-      .sidenav .nav-link {
-        width: 100%;
-      }
-
-      .sidenav .nav-link.active {
-        background-color: #232930;
-      }
-
-      .bg-light {
-        background-color: rgba(200, 200, 200, 0.1) !important;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body
     data-spy="scroll"
@@ -62,212 +39,237 @@
     class="d-flex flex-column"
     id="navTop"
   >
-    <nav class="navbar navbar-dark bg-black navbar-expand fixed-top">
-      <div class="container-fluid">
-        <a
-          id="dashboard-text"
-          class="navbar-brand text-primary pe-3 d-block"
-          href="./"
-          >Dashboard</a
-        >
-
-        <a
-          data-bs-toggle="collapse"
-          href="#"
-          data-bs-target="#fullmenu"
-          role="button"
-          class="d-inline me-3 collapsed"
-          aria-expanded="false"
-        >
-          <i
-            id="collapse-navbar"
-            class="mdi mdi-view-sequential p-1 p-lg-1"
-          ></i>
-        </a>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#modalLogin" data-bs-toggle="modal" class="nav-link">
-              <i class="mdi mdi-24px mdi-account-outline text-light"></i>
+    <!-- header section  -->
+    <header>
+      <nav class="navbar navbar-dark bg-black navbar-expand fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+          <div class="d-flex">
+            <a
+              id="dashboard-text"
+              class="navbar-brand text-primary pe-3 d-block"
+              href="./"
+              ><img
+                src="media/logos/T-Card-Logo(new).png"
+                class="img-thumbnail"
+                alt=""
+              />
             </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+            <a
+              data-bs-toggle="collapse"
+              href="#"
+              data-bs-target="#fullmenu"
+              role="button"
+              class="d-inline me-3 collapsed"
+              aria-expanded="false"
+            >
+              <i
+                id="collapse-navbar"
+                class="mdi mdi-view-sequential p-1 p-lg-1"
+              ></i>
+            </a>
+          </div>
+          <!-- search section -->
+          <div class="">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Recipient's username"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                Button
+              </button>
+            </div>
+          </div>
+          <div>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#modalLogin" data-bs-toggle="modal" class="nav-link">
+                  <i class="mdi mdi-24px mdi-account-outline text-light"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header section  -->
+    <!-- site section  -->
     <div class="container-fluid px-0 flex-grow-1">
       <div class="row g-0 flex-nowrap navbar-expand-lg">
         <div class="col-auto pe-lg-2 text-white sidebar bg-black min-vh-100">
           <div class="row g-0 flex-nowrap sticky-top sticky-top-side">
-            <div id="lg-navbar" class="col-lg-9 col-auto">
+            <div id="lg-navbar" class="col-auto">
               <div
-                id="mobile-manber"
-                class="navbar-collapse flex-column align-items-start h-auto sidenav collapse"
+                id="mobile-manuber"
+                class="navbar-collapse flex-column align-items-start h-auto pt-3 sidenav collapse"
                 style=""
               >
-                <a class="nav-link py-3" href="#navTop">Home</a>
-                <a class="nav-link py-3" href="#sectionReports">Reports</a>
-                <a class="nav-link py-3" href="#sectionInbox">Inbox</a>
-                <a class="nav-link py-3" href="#sectionPremiums">Premiums</a>
-                <a class="nav-link py-3" href="#sectionAlerts">Alerts</a>
+                <a class="nav-link py-3" href="#navTop">Dashboard</a>
+                <a class="nav-link py-3" href="#sectionReports">T-card</a>
+                <a class="nav-link py-3" href="#sectionInbox">Biz-Card</a>
+                <a class="nav-link py-3" href="#sectionPremiums">Enquiries</a>
+                <a class="nav-link py-3" href="#sectionAlerts">Appointments</a>
+                <a class="nav-link py-3" href="#sectionDetections">NFC Card</a>
+                <a class="nav-link py-3" href="#sectionDetections">Scans</a>
                 <a class="nav-link py-3" href="#sectionDetections"
-                  >Detections</a
-                >
-                <a
-                  class="nav-link py-3"
-                  href="#modalLogin"
-                  data-bs-toggle="modal"
-                  >Integrations</a
-                >
-                <a
-                  class="nav-link py-3"
-                  href="#modalLogin"
-                  data-bs-toggle="modal"
-                  >Customers</a
-                >
-                <a
-                  class="nav-link py-3"
-                  href="#modalLogin"
-                  data-bs-toggle="modal"
-                  >Orders</a
-                >
-                <a
-                  class="nav-link py-3"
-                  href="#modalLogin"
-                  data-bs-toggle="modal"
-                  >Settings</a
+                  >Contact List</a
                 >
               </div>
             </div>
             <div class="col text-center">
-              <div class="sidenav">
-                <a class="nav-link py-2" href="#navTop"
-                  ><i class="ms-auto mdi mdi-home-outline"></i
+              <div class="sidenav pt-3">
+                <a class="nav-link py-3 fw-light fs-6" href="#navTop"
+                  ><i class="fa-solid fa-gauge"></i
                 ></a>
-                <a class="nav-link py-2" href="#sectionReports"
-                  ><i class="ms-auto mdi mdi-file-document-box-outline"></i
+                <a class="nav-link py-3 fw-light fs-6" href="#"
+                  ><i class="fa-regular fa-address-card"></i
                 ></a>
-                <a class="nav-link py-2" href="#sectionInbox"
-                  ><i class="ms-auto mdi mdi-mailbox"></i
+                <a class="nav-link py-3 fw-light fs-6" href="#"
+                  ><i class="fa-solid fa-address-card"></i
                 ></a>
-                <a class="nav-link py-2" href="#sectionPremiums"
-                  ><i class="ms-auto mdi mdi-crown-outline"></i
+                <a class="nav-link py-3 fw-light fs-6" href="#"
+                  ><i class="fa-solid fa-circle-info"></i
                 ></a>
-                <a class="nav-link py-2" href="#sectionAlerts"
-                  ><i class="ms-auto mdi mdi-alarm-light-outline"></i
+                <a class="nav-link py-3 fw-light fs-6" href="#"
+                  ><i class="fa-brands fa-app-store"></i
                 ></a>
-                <a class="nav-link py-2" href="#sectionDetections"
-                  ><i class="ms-auto mdi mdi-shield-account"></i
+                <a class="nav-link py-3 fw-light fs-6" href="#"
+                  ><i class="fa-brands fa-nfc-directional"></i
                 ></a>
-                <a
-                  class="nav-link py-2"
-                  href="#modalLogin"
-                  data-bs-toggle="modal"
-                  ><i class="ms-auto mdi mdi-palette-swatch"></i
+                <a class="nav-link py-3 fw-light fs-6" href="#"
+                  ><i class="fa-solid fa-camera"></i
                 ></a>
-                <a
-                  class="nav-link py-2"
-                  href="#modalLogin"
-                  data-bs-toggle="modal"
-                  ><i class="ms-auto mdi mdi-account-search-outline"></i
-                ></a>
-                <a
-                  class="nav-link py-2"
-                  href="#modalLogin"
-                  data-bs-toggle="modal"
-                  ><i class="ms-auto mdi mdi-bus-clock"></i
-                ></a>
-                <a
-                  class="nav-link py-2"
-                  href="#modalLogin"
-                  data-bs-toggle="modal"
-                  ><i class="ms-auto mdi mdi-settings-outline"></i
+                <a class="nav-link py-3 fw-light fs-6" href="#"
+                  ><i class="fa-regular fa-address-book"></i
                 ></a>
               </div>
             </div>
           </div>
         </div>
+        <!-- main section  -->
+        <main class="col px-4 px-lg-5 pt-5">
+          <section>
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-white">
+              <div class="col">
+                <div class="card h-100 all-card round-card-container">
+                  <div
+                    class="card-body d-flex all-card round-card-container justify-content-between align-items-center"
+                  >
+                    <div
+                      class="display-5 px-3 py-2 text-white me-2 all-card round-card"
+                    >
+                      <i class="fa-solid fa-user fs-1-xl text-white"></i>
+                    </div>
+                    <div class="text-end">
+                      <h5 class="card-title fw-bold fs-2">1</h5>
+                      <p class="card-text fw-bolder">Total Active Tcards.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 bg-success all-card">
+                  <div
+                    class="card-body d-flex all-card bg-success justify-content-between align-items-center"
+                  >
+                    <div
+                      class="display-5 px-3 py-2 text-white me-2 all-card round-card"
+                    >
+                      <i
+                        class="fa-solid fa-user-large-slash fs-1-xl text-white"
+                      ></i>
+                    </div>
+                    <div class="text-end">
+                      <h5 class="card-title fw-bold fs-2">0</h5>
+                      <p class="card-text fw-bolder">Total DeActive Tcards.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 all-card bg-primary">
+                  <div
+                    class="card-body d-flex all-card bg-primary justify-content-between align-items-center"
+                  >
+                    <div
+                      class="display-5 px-3 py-2 text-white me-2 all-card round-card"
+                    >
+                      <i class="fa-solid fa-question fs-1-xl text-white"></i>
+                    </div>
+                    <div class="text-end">
+                      <h5 class="card-title fw-bold fs-2">0</h5>
+                      <p class="card-text fw-bolder">Today Enquiries.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 all-card bg-warning">
+                  <div
+                    class="card-body d-flex all-card bg-warning justify-content-between align-items-center"
+                  >
+                    <div
+                      class="display-5 px-3 py-2 text-white me-2 all-card round-card"
+                    >
+                      <i
+                        class="fa-solid fa-calendar-check fs-1-xl text-white"
+                      ></i>
+                    </div>
+                    <div class="text-end">
+                      <h5 class="card-title fw-bold fs-2">0</h5>
+                      <p class="card-text fw-bolder">Today Appointments.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Today Appointments -->
+          <section>
+            <div>
+              <h1 class="text-white">Today Appointments</h1>
+
+              <div>
+                <table class="table">
+                  <thead class="table-light">
+                    <tr class="px-4">
+                      <th class="ps-3" scope="col">TCARD NAME</th>
+                      <th scope="col">NAME</th>
+                      <th scope="col">PHONE</th>
+                      <th scope="col">EMAIL</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-white">
+                    <tr>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>@fat</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- main section  -->
       </div>
     </div>
-    <div
-      id="modalLogin"
-      class="modal fade"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="mb-0">Login</h3>
-            <button
-              type="button"
-              class="btn-close font-weight-light"
-              data-bs-dismiss="modal"
-              aria-hidden="true"
-            ></button>
-          </div>
-          <div class="modal-body py-4">
-            <form
-              class="form mx-auto w-75"
-              role="form"
-              autocomplete="off"
-              id="formLogin"
-              novalidate=""
-              method="POST"
-            >
-              <div class="form-group">
-                <a href="" class="float-end">New user?</a>
-                <label for="uname1">Username</label>
-                <input
-                  type="text"
-                  class="form-control form-control-lg"
-                  name="uname1"
-                  id="uname1"
-                  required=""
-                />
-                <div class="invalid-feedback">Oops, you missed this one.</div>
-              </div>
-              <div class="form-group">
-                <label>Password</label>
-                <input
-                  type="password"
-                  class="form-control form-control-lg"
-                  id="pwd1"
-                  required=""
-                  autocomplete="new-password"
-                />
-                <div class="invalid-feedback">Enter your password too!</div>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="rememberMe"
-                />
-                <label class="custom-control-label" for="rememberMe"
-                  >Remember me on this computer</label
-                >
-              </div>
-              <div class="form-group py-4">
-                <button
-                  class="btn btn-outline-secondary btn-lg"
-                  data-bs-dismiss="modal"
-                  aria-hidden="true"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-success btn-lg float-end"
-                  id="btnLogin"
-                >
-                  Login
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- site section  -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script></script>

@@ -1,5 +1,5 @@
 const navItems = document.getElementById('lg-navbar');
-const mobileNavber = document.getElementById('mobile-manber');
+const mobileNavber = document.getElementById('mobile-manuber');
 const morebtn = document.getElementById('collapse-navbar');
 const dashboardText = document.getElementById('dashboard-text');
 
