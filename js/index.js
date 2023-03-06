@@ -9,10 +9,13 @@ document.getElementById('collapse-navbar').addEventListener('click', function ()
         navItems.style.display = 'block'
         mobileNavber.style.display = 'block';
         dashboardText.style.display = 'block'
+        dashboardText.classList.remove('d-none');
+
     } else {
         navItems.style.display = 'none'
         mobileNavber.style.display = 'none'
 
         dashboardText.style.display = 'none'
+        dashboardText.classList.add('d-none');
     }
 })
