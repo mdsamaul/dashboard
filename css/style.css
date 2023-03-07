@@ -42,3 +42,13 @@ body {
 .all-card {
   border-radius: 10px;
 }
+.profile-pointer {
+  cursor: pointer;
+  border: 1px solid rgba(255, 99, 71, 0);
+}
+.profile-pointer:hover {
+  border: 1px solid tomato;
+  border-radius: 8px;
+  box-shadow: 1px 0px 5px black;
+  overflow: visible;
+}

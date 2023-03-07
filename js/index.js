@@ -27,6 +27,8 @@ document.getElementById('collapse-navbar').addEventListener('click', function ()
 document.getElementById('dashboard-btn').addEventListener('click', function () {
 
     window.location.href = '../index.html'
+    toggleSpinner(true);
+
 
 })
 // t-card 
@@ -34,11 +36,14 @@ document.getElementById('t-card-btn').addEventListener('click', function () {
 
 
     window.location.href = '../other-pages/t-card.html'
+    toggleSpinner(true);
+
 
 })
 // biz-card
 document.getElementById('biz-card-btn').addEventListener('click', function () {
 
+    toggleSpinner(true);
 
     window.location.href = '../other-pages/biz-card.html'
 
@@ -46,12 +51,14 @@ document.getElementById('biz-card-btn').addEventListener('click', function () {
 // enquiries-btn
 document.getElementById('enquiries-btn').addEventListener('click', function () {
 
+    toggleSpinner(true);
 
     window.location.href = '../other-pages/enquiries.html'
 
 })
 // appointments-btn
 document.getElementById('appointments-btn').addEventListener('click', function () {
+    toggleSpinner(true);
 
 
     window.location.href = '../other-pages/appointments.html'
@@ -60,12 +67,14 @@ document.getElementById('appointments-btn').addEventListener('click', function (
 // nfc-card-btn
 document.getElementById('nfc-card-btn').addEventListener('click', function () {
 
+    toggleSpinner(true);
 
     window.location.href = '../other-pages/nfc-card.html'
 
 })
 // scan-btn
 document.getElementById('scan-btn').addEventListener('click', function () {
+    toggleSpinner(true);
 
 
     window.location.href = '../other-pages/scan.html'
@@ -74,12 +83,14 @@ document.getElementById('scan-btn').addEventListener('click', function () {
 // contact-list-btn
 document.getElementById('contact-list-btn').addEventListener('click', function () {
 
+    toggleSpinner(true);
 
     window.location.href = '../other-pages/contact.html'
 
 })
 // dashboard icon
 document.getElementById('dashboard-icon-btn').addEventListener('click', function () {
+    toggleSpinner(true);
 
     window.location.href = '../index.html'
 
@@ -94,12 +105,14 @@ document.getElementById('t-card-icon-btn').addEventListener('click', function ()
 // biz-card icon
 document.getElementById('biz-card-icon-btn').addEventListener('click', function () {
 
+    toggleSpinner(true);
 
     window.location.href = '../other-pages/biz-card.html'
 
 })
 // enquiries-btn icon
 document.getElementById('enquiries-icon-btn').addEventListener('click', function () {
+    toggleSpinner(true);
 
 
     window.location.href = '../other-pages/enquiries.html'
@@ -108,6 +121,7 @@ document.getElementById('enquiries-icon-btn').addEventListener('click', function
 // appointments-btn icon
 document.getElementById('appointments-icon-btn').addEventListener('click', function () {
 
+    toggleSpinner(true);
 
     window.location.href = '../other-pages/appointments.html'
 
@@ -115,12 +129,14 @@ document.getElementById('appointments-icon-btn').addEventListener('click', funct
 // nfc-card-btn icon
 document.getElementById('nfc-card-icon-btn').addEventListener('click', function () {
 
+    toggleSpinner(true);
 
     window.location.href = '../other-pages/nfc-card.html'
 
 })
 // scan-btn icon
 document.getElementById('scan-icon-btn').addEventListener('click', function () {
+    toggleSpinner(true);
 
 
     window.location.href = '../other-pages/scan.html'
@@ -128,7 +144,17 @@ document.getElementById('scan-icon-btn').addEventListener('click', function () {
 })
 // contact-list-btn icon
 document.getElementById('contact-list-icon-btn').addEventListener('click', function () {
-
+    toggleSpinner(true);
 
     window.location.href = '../other-pages/contact.html'
 })
+
+// spinner-container
+function toggleSpinner() {
+    const spinnerContainer = document.getElementById('spinner-container');
+    if (spinnerContainer) {
+        spinnerContainer.classList.remove('d-none');
+    } else {
+        spinnerContainer.classList.add('d-none');
+    }
+}
