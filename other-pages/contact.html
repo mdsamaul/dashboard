@@ -6,10 +6,10 @@
     <meta name="generator" content="Codeply" />
     <link
       rel="shortcut icon"
-      href="media/logos/favicon-infyom.png"
+      href="../media/logos/favicon-infyom.png"
       type="image/x-icon"
     />
-    <title>Dashboard | t-card</title>
+    <title>Contact | T-Card</title>
 
     <link
       rel="stylesheet"
@@ -30,8 +30,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
     />
-
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body
     data-spy="scroll"
@@ -49,7 +49,7 @@
               class="navbar-brand text-primary pe-3 d-block"
               href="./"
               ><img
-                src="media/logos/T-Card-Logo(new).png"
+                src="../media/logos/T-Card-Logo(new).png"
                 class="img-thumbnail"
                 alt=""
               />
@@ -112,14 +112,12 @@
                 class="navbar-collapse flex-column align-items-start h-auto pt-3 sidenav collapse"
                 style=""
               >
-                <a
-                  style="border-left: 5px solid blue"
-                  class="nav-link py-3"
-                  id="dashboard-btn"
-                  href="#navTop"
+                <a class="nav-link py-3" id="dashboard-btn" href="#"
                   >Dashboard</a
                 >
-                <a class="nav-link py-3" id="t-card-btn" href="#">T-card</a>
+                <a class="nav-link py-3" id="t-card-btn" href="#sectionReports"
+                  >T-card</a
+                >
                 <a class="nav-link py-3" id="biz-card-btn" href="#sectionInbox"
                   >Biz-Card</a
                 >
@@ -145,6 +143,7 @@
                   >Scans</a
                 >
                 <a
+                  style="border-left: 5px solid blue"
                   class="nav-link py-3"
                   id="contact-list-btn"
                   href="#sectionDetections"
@@ -207,119 +206,7 @@
           </div>
         </div>
         <!-- main section  -->
-        <main class="col px-4 px-lg-5 pt-5">
-          <section>
-            <div
-              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-white"
-            >
-              <div class="col">
-                <div class="card h-100 py-3 all-card round-card-container">
-                  <div
-                    class="card-body d-flex all-card round-card-container justify-content-between align-items-center"
-                  >
-                    <div
-                      class="display-5 px-3 py-2 text-white me-2 all-card round-card"
-                    >
-                      <i class="fa-solid fa-user fs-1-xl text-white"></i>
-                    </div>
-                    <div class="text-end">
-                      <h5 class="card-title fw-bold fs-2 pb-3">1</h5>
-                      <p class="card-text fw-bolder">Total Active Tcards.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card py-3 h-100 bg-success all-card">
-                  <div
-                    class="card-body d-flex all-card bg-success justify-content-between align-items-center"
-                  >
-                    <div
-                      class="display-5 px-3 py-2 text-white me-2 all-card round-card"
-                    >
-                      <i
-                        class="fa-solid fa-user-large-slash fs-1-xl text-white"
-                      ></i>
-                    </div>
-                    <div class="text-end">
-                      <h5 class="card-title fw-bold py-3 fs-2">0</h5>
-                      <p class="card-text fw-bolder">Total DeActive Tcards.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 py-3 all-card bg-primary">
-                  <div
-                    class="card-body d-flex all-card bg-primary justify-content-between align-items-center"
-                  >
-                    <div
-                      class="display-5 px-3 py-2 text-white me-2 all-card round-card"
-                    >
-                      <i class="fa-solid fa-question fs-1-xl text-white"></i>
-                    </div>
-                    <div class="text-end">
-                      <h5 class="card-title fw-bold py-3 fs-2">0</h5>
-                      <p class="card-text fw-bolder">Today Enquiries.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 py-3 all-card bg-warning">
-                  <div
-                    class="card-body d-flex all-card bg-warning justify-content-between align-items-center"
-                  >
-                    <div
-                      class="display-5 px-3 py-2 text-white me-2 all-card round-card"
-                    >
-                      <i
-                        class="fa-solid fa-calendar-check fs-1-xl text-white"
-                      ></i>
-                    </div>
-                    <div class="text-end">
-                      <h5 class="card-title fw-bold py-3 fs-2">0</h5>
-                      <p class="card-text fw-bolder">Today Appointments.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Today Appointments -->
-          <section class="my-5">
-            <div>
-              <h1 class="text-white">Today Appointments</h1>
-
-              <div>
-                <table class="table">
-                  <thead class="table-light">
-                    <tr class="px-4">
-                      <th class="ps-3" scope="col">TCARD NAME</th>
-                      <th scope="col">NAME</th>
-                      <th scope="col">PHONE</th>
-                      <th scope="col">EMAIL</th>
-                    </tr>
-                  </thead>
-                  <tbody class="text-white">
-                    <tr>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                      <td>@fat</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-        </main>
+        <main class="col px-4 px-lg-5 pt-5"></main>
         <!-- main section  -->
       </div>
     </div>
@@ -327,6 +214,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script></script>
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
